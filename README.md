@@ -77,6 +77,12 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Login to Client-1 (Remote Desktop) as the original local admin (labuser) and join it to the domain (computer will restart)
 - Login to the Domain Controller (Remote Desktop) and verify Client-1 shows up in Active Directory Users and Computers (ADUC) inside the “Computers” container on the root of the domain
 - Create a new OU named “_CLIENTS” and drag Client-1 into there (Step is not really necessary, just for organizational purposes. I guess I skipped this in the lab!)
+![image](https://github.com/user-attachments/assets/a3acb21c-656b-4888-b304-2fe8fd6746fd)
+![Screenshot 2024-07-17 155945](https://github.com/user-attachments/assets/a1561b23-e3ac-4442-882e-21fd4183bacd)
+![image](https://github.com/user-attachments/assets/5538a231-5b08-4363-a922-f40f525ba92a)
+
+
+
 
 
 
