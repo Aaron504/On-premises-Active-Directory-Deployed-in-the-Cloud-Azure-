@@ -80,6 +80,52 @@ This tutorial outlines the implementation of on-premises Active Directory within
 ![image](https://github.com/user-attachments/assets/a3acb21c-656b-4888-b304-2fe8fd6746fd)
 ![Screenshot 2024-07-17 155945](https://github.com/user-attachments/assets/a1561b23-e3ac-4442-882e-21fd4183bacd)
 ![image](https://github.com/user-attachments/assets/5538a231-5b08-4363-a922-f40f525ba92a)
+![Screenshot 2024-07-17 174058](https://github.com/user-attachments/assets/75f78c9a-f80b-46fe-9d01-316d815957c6)
+![Screenshot 2024-07-18 134817](https://github.com/user-attachments/assets/b6e6c2a7-0961-4489-b34b-fb386b4fdf6c)
+
+- Setup Remote Desktop for non-administrative users on Client-1
+- Log into Client-1 as mydomain.com\jane_admin and open system properties
+- Click “Remote Desktop”
+- Allow “domain users” access to remote desktop
+- You can now log into Client-1 as a normal, non-administrative user now
+- Normally you’d want to do this with Group Policy that allows you to change MANY systems at once (maybe a future lab)
+![Screenshot 2024-07-18 135548](https://github.com/user-attachments/assets/0c4d696c-1f6a-4cff-9cce-249271afac41)
+![Screenshot 2024-07-18 135708](https://github.com/user-attachments/assets/bf1d9e7a-069c-4a67-a7f8-98e5e2424fb2)
+![Screenshot 2024-07-18 135854](https://github.com/user-attachments/assets/be08f3b5-d9a2-41ff-9f98-9eac3f486a7f)
+![Screenshot 2024-07-18 140138](https://github.com/user-attachments/assets/07deceda-542d-4b01-a792-cff3e8b70046)
+![Screenshot 2024-07-18 140556](https://github.com/user-attachments/assets/b887120a-e835-4cfa-814e-4c5a379e1075)
+
+- Create a bunch of additional users and attempt to log into client-1 with one of the users
+- Login to DC-1 as jane_admin
+- Open PowerShell_ise as an administrator
+- Create a new File and paste the contents of the script into it (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
+- Run the script and observe the accounts being created
+- When finished, open ADUC and observe the accounts in the appropriate OU
+- Attempt to log into Client-1 with one of the accounts (take note of the password in the script)
+
+![Screenshot 2024-07-18 141013](https://github.com/user-attachments/assets/68b5a88d-9848-4d3b-bfe3-3b3c525c4d37)
+![Screenshot 2024-07-18 141610](https://github.com/user-attachments/assets/2b101a4d-4e3b-4b7c-b656-4166ba32414a)
+![Screenshot 2024-07-18 141853](https://github.com/user-attachments/assets/01d51699-27f2-46b1-8391-9be541b29b91)
+![Screenshot 2024-07-18 142232](https://github.com/user-attachments/assets/742840ff-9ced-4aab-b6fa-e703190b9462)
+From the script, all of the new users are being placed into the _EMPLOYEES folder in Active Directory.
+![Screenshot 2024-07-18 142452](https://github.com/user-attachments/assets/5edc909b-22b3-4eb4-bb97-c01b0bdb00a4)
+Logging in with one of the random users from the list.
+![Screenshot 2024-07-18 142916](https://github.com/user-attachments/assets/52da5faa-4765-4ddf-aae1-1d8b39084768)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
